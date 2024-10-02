@@ -35,13 +35,7 @@ export default function Navbar() {
       </div>
       <li className="Buttons_Navbar">
         <ul>
-          <button
-            onClick={(e) => {
-              location.href = "#Home";
-            }}
-          >
-            Home
-          </button>
+          <button>Home</button>
         </ul>
         <ul>
           <button>Sobre Mim</button>
