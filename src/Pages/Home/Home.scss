@@ -6,17 +6,18 @@
   top: 100px;
   user-select: none;
   -webkit-user-select: none;
-
+  transition: 0.2s;
   .Title_Container {
     position: relative;
     left: 50px;
     top: 50%;
     transform: translateY(-50%);
     height: 200px;
+    width: 0;
 
     .Texts_OF {
       position: relative;
-      color: $TextColor2;
+      color: var(--TextColor2);
       font-size: 36px;
       text-align: left;
       margin: 0;
@@ -34,7 +35,7 @@
 
       h1 {
         position: absolute;
-        color: $TextColor2;
+        color: var(--TextColor2);
         font-size: 36px;
         text-align: left;
         margin: 0;
@@ -43,14 +44,14 @@
 
         span {
           color: #25272b;
-          text-shadow: -1px 1px 0 $TextColor1, 1px 1px 0 $TextColor1,
-            1px -1px 0 $TextColor1, -1px -1px 0 $TextColor1;
+          text-shadow: -1px 1px 0 var(--TextColor1), 1px 1px 0 var(--TextColor1),
+            1px -1px 0 var(--TextColor1), -1px -1px 0 var(--TextColor1);
           font-size: 66px;
           font-weight: 800;
         }
 
         .FE_Text {
-          color: $EffectColor1;
+          color: var(--EffectColor1);
           font-size: 36px;
           text-shadow: 0 0 0;
         }
@@ -61,7 +62,7 @@
       background: linear-gradient(
         180deg,
         transparent 0%,
-        $EffectColor1 50%,
+        var(--EffectColor1) 50%,
         transparent 100%
       );
       position: absolute;
@@ -73,13 +74,12 @@
 
   .Buttons_Container {
     position: absolute;
-    width: 560px;
-    height: 40px;
     margin: 0;
     display: flex;
     top: 90%;
     left: 50px;
     transform: translateY(-50%);
+    transition: 0.2s;
 
     a {
       position: relative;
@@ -93,8 +93,8 @@
       transition: 0.2s;
       box-sizing: border-box;
       background-color: transparent;
-      border: 3px solid $EffectColor1;
-      color: $TextColor2;
+      border: 3px solid var(--EffectColor1);
+      color: var(--TextColor2);
       text-align: center;
       padding: 10px;
       text-decoration: none;
@@ -116,8 +116,8 @@
       }
 
       &:hover {
-        background-color: $EffectColor1;
-        color: $TextColor1;
+        background-color: var(--EffectColor1);
+        color: var(--TextColor1);
         transform: scale(1.05);
 
         .Icon {
@@ -149,7 +149,7 @@
   left: 50%;
   transform: translateX(-50%);
   font-size: 20px;
-  color: $TextColor3;
+  color: var(--TextColor3);
   cursor: default;
   transition: 0.5s;
   user-select: none;
@@ -193,7 +193,7 @@
   }
 
   100% {
-    width: 800px;
+    width: 80vw;
   }
 }
 
@@ -204,5 +204,92 @@
     left: auto;
     transform: translateY(-50%);
     right: 0;
+  }
+}
+
+@media only screen and (max-width: 1090px) {
+  .Logo_Icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    right: 0;
+  }
+
+  .Home_Container {
+    top: 180px;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .Home_Container {
+    .Buttons_Container {
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    .Title_Container {
+      .Texts_OF {
+        font-size: 30px;
+
+        h1 {
+          font-size: 30px;
+
+          span {
+            font-size: 60px;
+          }
+
+          .FE_Text {
+            font-size: 30px;
+          }
+        }
+      }
+
+      .Detail_Title {
+        background: linear-gradient(
+          180deg,
+          transparent 0%,
+          var(--EffectColor1) 50%,
+          transparent 100%
+        );
+        position: absolute;
+        width: 6px;
+        height: 140px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .Home_Container {
+    .Title_Container {
+      .Texts_OF {
+        font-size: 20px;
+
+        h1 {
+          font-size: 20px;
+
+          span {
+            font-size: 50px;
+          }
+
+          .FE_Text {
+            font-size: 20px;
+          }
+        }
+      }
+
+      .Detail_Title {
+        background: linear-gradient(
+          180deg,
+          transparent 0%,
+          var(--EffectColor1) 50%,
+          transparent 100%
+        );
+        position: absolute;
+        width: 6px;
+        height: 140px;
+      }
+    }
   }
 }

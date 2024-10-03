@@ -6,7 +6,7 @@
   left: 0;
   height: 100%;
   width: 103.7%;
-  width: 100%;
+  width: 100vw;
   z-index: -10;
 }
 .Background_Image {
@@ -14,16 +14,16 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 100%;
+  width: 100vw;
   object-fit: cover;
 }
 
 .Background_Effect {
-  background: $BgEffect;
+  background: var(--BGEffect);
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
-  width: 100%;
+  width: 100vw;
   backdrop-filter: blur(10px);
 }
