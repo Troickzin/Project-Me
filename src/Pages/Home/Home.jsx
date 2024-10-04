@@ -49,7 +49,7 @@ function Home() {
         <img className="Logo_Icon" src={LogoImg} draggable={false} />
 
         <h1 className="Scroll_Down" id="Scroll-Down">
-          Scroll Down{" "}
+          Role para Continuar{" "}
           <div className="SDID">
             <ArrowDownIcon />
           </div>

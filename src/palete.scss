@@ -17,20 +17,30 @@
   --BGEffect: linear-gradient(180deg, rgba(17, 19, 23, 0.86) 0%, #111317 100%);
 }
 
-.White_Mode {
+.Blue_Color {
+  --Effect50: #f4f7fa;
+  --Effect100: #e5ebf4;
+  --Effect200: #d1dcec;
+  --Effect300: #b2c6de;
+  --Effect400: #8da8cd;
+  --Effect500: #718dc0;
+  --Effect600: #5f75b1;
+  --Effect700: #5366a2;
+  --Effect800: #465281;
+  --Effect900: #3d486b;
+  --Effect950: #292e42;
 }
 
-$BGColor1: #111317;
-$BGColor2: #1d1e24;
-$BGColor3: #0a0d0f;
-
-$BGNavBar: #111317cc;
-
-$TextColor1: #bdc3d4;
-$TextColor2: #7f8494;
-$TextColor3: #484c56;
-
-$EffectColor1: #0d9da3;
-$EffectColor2: #0e777b;
-
-$BgEffect: linear-gradient(180deg, rgba(17, 19, 23, 0.86) 0%, #111317 100%);
+.Red_Color {
+  --Effect50: #fff0f0;
+  --Effect100: #ffdddd;
+  --Effect200: #ffc0c0;
+  --Effect300: #ff9494;
+  --Effect400: #ff5757;
+  --Effect500: #ff2323;
+  --Effect600: #ff0000;
+  --Effect700: #d70000;
+  --Effect800: #b10303;
+  --Effect900: #920a0a;
+  --Effect950: #500000;
+}
