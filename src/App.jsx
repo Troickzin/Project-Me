@@ -1,7 +1,9 @@
 import "./App.scss";
+import ScrollFunc from "./Services/ScrollFunc";
 
 function App() {
-  return <></>;
+  ScrollFunc();
+  return null;
 }
 
 export default App;
