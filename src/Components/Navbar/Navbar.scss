@@ -1,141 +1,141 @@
 @import "../../palete.scss";
 
-.Navbar {
-  width: 100vw;
-  height: 60px;
-  background-color: var(--BGNavBar);
-  backdrop-filter: blur(10px);
-  box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
-  position: fixed;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  transition: all 0.5s, width 0s;
+// .Navbar {
+//   width: 100vw;
+//   height: 60px;
+//   background-color: var(--BGNavBar);
+//   backdrop-filter: blur(10px);
+//   box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
+//   position: fixed;
+//   z-index: 10;
+//   display: flex;
+//   align-items: center;
+//   transition: all 0.5s, width 0s;
 
-  img {
-    width: 55px;
-    height: 55px;
-    margin-left: 10px;
-  }
+//   img {
+//     width: 55px;
+//     height: 55px;
+//     margin-left: 10px;
+//   }
 
-  .Social_Midia_Navbar {
-    position: relative;
-    margin-left: 20px;
-    transform: translateY(-200%);
-    transition: 0.5s;
-    height: 26px;
-    display: flex;
+//   .Social_Midia_Navbar {
+//     position: relative;
+//     margin-left: 20px;
+//     transform: translateY(-200%);
+//     transition: 0.5s;
+//     height: 26px;
+//     display: flex;
 
-    a {
-      position: relative;
-      border: none;
-      border-radius: 50%;
-      width: 26px;
-      height: 26px;
-      background-color: var(--BGColor3);
-      color: var(--TextColor3);
-      cursor: pointer;
-      left: 0;
-      margin: 8px;
-      margin-top: 0;
-      margin-bottom: 0;
-      transition: 0.2s;
+//     a {
+//       position: relative;
+//       border: none;
+//       border-radius: 50%;
+//       width: 26px;
+//       height: 26px;
+//       background-color: var(--BGColor3);
+//       color: var(--TextColor3);
+//       cursor: pointer;
+//       left: 0;
+//       margin: 8px;
+//       margin-top: 0;
+//       margin-bottom: 0;
+//       transition: 0.2s;
 
-      &:first-child {
-        margin-left: 0;
-      }
-      &:last-child {
-        margin-right: 0;
-      }
+//       &:first-child {
+//         margin-left: 0;
+//       }
+//       &:last-child {
+//         margin-right: 0;
+//       }
 
-      &:hover {
-        transform: scale(1.1);
-        transition: 0.2s;
-        color: var(--TextColor1);
-      }
+//       &:hover {
+//         transform: scale(1.1);
+//         transition: 0.2s;
+//         color: var(--TextColor1);
+//       }
 
-      .Icon {
-        width: 18px;
-        height: 18px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-      }
-    }
-  }
+//       .Icon {
+//         width: 18px;
+//         height: 18px;
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         transform: translateX(-50%) translateY(-50%);
+//       }
+//     }
+//   }
 
-  .Buttons_Navbar {
-    position: absolute;
-    right: 160px;
-    display: flex;
+//   .Buttons_Navbar {
+//     position: absolute;
+//     right: 160px;
+//     display: flex;
 
-    button {
-      border: none;
-      background-color: transparent;
-      color: var(--TextColor3);
-      font-size: 14px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: 0.2s;
-      overflow: hidden;
-      height: 22px;
+//     button {
+//       border: none;
+//       background-color: transparent;
+//       color: var(--TextColor3);
+//       font-size: 14px;
+//       font-weight: 600;
+//       cursor: pointer;
+//       transition: 0.2s;
+//       overflow: hidden;
+//       height: 22px;
 
-      &::before {
-        content: "";
-        background-color: var(--TextColor3);
-        position: relative;
-        top: 18px;
-        height: 2px;
-        display: block;
-        transform: translateX(-100px);
-        transition: all 0.8s, background-color 0.2s;
-      }
-      &:hover {
-        color: var(--TextColor1);
-        transform: scale(1.05);
-      }
-      &:hover::before {
-        background-color: var(--TextColor1);
-        height: 2px;
-        transform: translateX(0);
-        transition: 0.3s;
-      }
-    }
-  }
+//       &::before {
+//         content: "";
+//         background-color: var(--TextColor3);
+//         position: relative;
+//         top: 18px;
+//         height: 2px;
+//         display: block;
+//         transform: translateX(-100px);
+//         transition: all 0.8s, background-color 0.2s;
+//       }
+//       &:hover {
+//         color: var(--TextColor1);
+//         transform: scale(1.05);
+//       }
+//       &:hover::before {
+//         background-color: var(--TextColor1);
+//         height: 2px;
+//         transform: translateX(0);
+//         transition: 0.3s;
+//       }
+//     }
+//   }
 
-  .Theme_Button {
-    position: absolute;
-    right: 45px;
-    border: none;
-    width: 18px;
-    height: 18px;
-    background-color: transparent;
-    color: var(--TextColor2);
-    cursor: pointer;
+//   .Theme_Button {
+//     position: absolute;
+//     right: 45px;
+//     border: none;
+//     width: 18px;
+//     height: 18px;
+//     background-color: transparent;
+//     color: var(--TextColor2);
+//     cursor: pointer;
 
-    transition: 0.2s;
-    &:hover {
-      color: var(--TextColor1);
-      transform: scale(1.05);
-    }
+//     transition: 0.2s;
+//     &:hover {
+//       color: var(--TextColor1);
+//       transform: scale(1.05);
+//     }
 
-    .Icon {
-      width: 18px;
-      height: 18px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-    }
-  }
-}
+//     .Icon {
+//       width: 18px;
+//       height: 18px;
+//       position: absolute;
+//       top: 50%;
+//       left: 50%;
+//       transform: translateX(-50%) translateY(-50%);
+//     }
+//   }
+// }
 
-.Navbar.Small {
-  height: 40px;
+// .Navbar.Small {
+//   height: 40px;
 
-  .Social_Midia_Navbar {
-    // transform: translateY(0%);
-    transition: 0.5s;
-  }
-}
+//   .Social_Midia_Navbar {
+//     // transform: translateY(0%);
+//     transition: 0.5s;
+//   }
+// }

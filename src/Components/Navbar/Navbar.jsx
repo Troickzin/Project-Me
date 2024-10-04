@@ -1,65 +1,12 @@
-import { useEffect, useState } from "react";
-import { LinkedinIcon, GithubIcon, SunIcon } from "../Icons";
 import "./Navbar.scss";
-
-import logoImg from "../../assets/Logo/Logo_45px.png";
+import Mobile_Navbar from "./Components/Mobile_Navbar.jsx";
+import Desktop_Navbar from "./Components/Desktop_Navbar.jsx";
 
 export default function Navbar() {
-  const [small, setSmall] = useState("");
-  const [socialButVisible, setSocialButVisible] = useState(false);
-
-  useEffect((e) => {});
-  addEventListener("scroll", (e) => {
-    const ScrollDown = document.getElementById("Scroll-Down");
-    const SocialButNav = document.getElementById("Social_Midia_Navbar");
-    if (window.scrollY == 0) {
-      setSmall("");
-      ScrollDown.style.opacity = 1;
-    } else if (window.scrollY <= 200) {
-      setSmall("Small");
-      ScrollDown.style.opacity = 0;
-    }
-
-    if (window.scrollY >= 600 && socialButVisible == false) {
-      SocialButNav.style.transform = "translateY(0%)";
-      setSocialButVisible(true);
-    } else if (window.scrollY <= 600 && socialButVisible == true) {
-      SocialButNav.style.transform = "translateY(-200%)";
-      setSocialButVisible(false);
-    }
-  });
-
   return (
-    <div className={"Navbar " + small}>
-      <img src={logoImg} />
-      <div className="Social_Midia_Navbar" id="Social_Midia_Navbar">
-        <a
-          href="https://www.linkedin.com/in/edson-luiz-mendon%C3%A7a-ramos/"
-          target="_blank"
-        >
-          <LinkedinIcon />
-        </a>
-        <a href="https://github.com/Troickzin" target="_blank">
-          <GithubIcon />
-        </a>
-      </div>
-      <li className="Buttons_Navbar">
-        <ul>
-          <button>Home</button>
-        </ul>
-        <ul>
-          <button>Sobre Mim</button>
-        </ul>
-        <ul>
-          <button>Projetos</button>
-        </ul>
-        <ul>
-          <button>Contato</button>
-        </ul>
-      </li>
-      <button className="Theme_Button">
-        <SunIcon />
-      </button>
-    </div>
+    <>
+      <Mobile_Navbar />
+      <Desktop_Navbar />
+    </>
   );
 }

@@ -13,10 +13,57 @@ function Home() {
   const text = "<Front-End/>";
   return (
     <>
-      <Background />
-      <Navbar />
-      <div id="Home">
+      <div id="Home" className="Home">
         <div className="Home_Container">
+          <div className="Title_Container">
+            <div className="Texts_OF">
+              <h1>
+                Olá! me chamo <br />
+                <span>Edson Luiz M. Ramos</span>
+                <br /> sou Desenvolvedor
+                <span className="FE_Text">{" " + text}</span>
+              </h1>
+            </div>
+          </div>
+
+          <div className="Detail_Title" />
+        </div>
+
+        <div className="Buttons_Container">
+          <a
+            href="https://www.linkedin.com/in/edson-luiz-mendon%C3%A7a-ramos/"
+            target="_blank"
+            draggable={false}
+          >
+            <LinkedinIcon /> <p>Linkedin</p>
+          </a>
+          <a
+            href="https://github.com/Troickzin"
+            target="_blank"
+            draggable={false}
+          >
+            <GithubIcon />
+            <p>Github</p>
+          </a>
+        </div>
+
+        <img className="Logo_Icon" src={LogoImg} draggable={false} />
+
+        <h1 className="Scroll_Down" id="Scroll-Down">
+          Role para Continuar{" "}
+          <div className="SDID">
+            <ArrowDownIcon />
+          </div>
+        </h1>
+      </div>
+    </>
+  );
+}
+
+export default Home;
+
+{
+  /* <div className="Home_Container">
           <div className="Title_Container">
             <div className="Detail_Title" />
             <div className="Texts_OF">
@@ -53,10 +100,5 @@ function Home() {
           <div className="SDID">
             <ArrowDownIcon />
           </div>
-        </h1>
-      </div>
-    </>
-  );
+        </h1> */
 }
-
-export default Home;
